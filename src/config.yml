@@ -1,0 +1,21 @@
+server:
+  # Server specific configuration
+  address: localhost
+  port: 9446
+  # Currently support only http, build on web (powered by PHP).
+  # A more powerful server planned, which will use own ISC protocol.
+  protocol: http
+  ak: type_your_ak_here # Your access key to server.
+  sk: type_your_sk_here # Your secret key to server.
+  keepalive: 60 # Send a keep-alive packet after NUM seconds of inactive, for only ISC protocol.
+  timeout: 3 # Socket timeout, 3 or less is recommended, since too long may let queue overflow.
+  path: /path/to/server # The common prefix of path to server, for only HTTP protocol.
+
+client:
+  # Client specific configuration
+  cooldown: 5 # Minimal interval between each command, in seconds.
+  queue: 1024 # Maximum length of pending queue.
+  lang: en-US # Language definition.
+  trading:
+    newaccount: 100 # $100 per account.
+    tax: 0.5 # In percent, 0.5 means 0.5%.
