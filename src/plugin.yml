@@ -1,0 +1,8 @@
+name: ItemStock
+main: com.jackyyf.ItemStock.ItemStock
+version: 0.0.1 Alpha
+
+command:
+  $:
+    description: ItemStock Command.
+    usage: Refer to /$ help.

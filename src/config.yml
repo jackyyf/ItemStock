@@ -1,0 +1,16 @@
+Remote:
+  Address: 127.0.0.1
+  Port: 2713
+  AK: your_access_key_here
+  SK: your_secret_key_here
+  Retry: 5 # Max Retry Times
+
+Local:
+  CoolDown: 5 # Interval between command (except help)
+  Queue: 1024 # Max Length of the queue
+  Lang: en_US # I'll lookup in lang directory for the specification.
+  Trading:
+    Account: 100 # Cost 100 unit of money per account
+    # Selling tax, in percent. If someone sell something for $1000 and tax is 0.5%, seller will receive $995.
+    Tax: 0.5
+
